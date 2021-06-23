@@ -30,8 +30,6 @@ __Table of Contents__
 
 [![Demo Video](http://img.youtube.com/vi/uyVSj8GgWzY/0.jpg)](https://youtu.be/uyVSj8GgWzY)
 
-[![Demo Video](http://img.youtube.com/vi/3MOnhAfINNw/0.jpg)](https://youtu.be/3MOnhAfINNw)
-
 
 # Features 
 
