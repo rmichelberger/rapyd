@@ -42,8 +42,8 @@ You can top up your wallet with either a bank transfer or a card payment. Quick 
 ## Send / receive money 💬
 You can send/receive money to your friends & family as easy as sending a chat message.
 
-- Private: Do you want to give pocket money to your children? No problem.
-- Business: Payout your employees with Rapyd? No problem.
+- [Family] Do you want to give pocket money to your children? No problem.
+- [Business] Payout your employees with Rapyd? No problem.
 - Just create a recurring payment and let the magic happen.__*__
 ##### (*Feature is under development)
 
@@ -63,9 +63,8 @@ Merchants can easily create a payment. No need to have any expensive card termin
 ## Forward payment ➡️
 You can forward the payment with just one click. Send it to your daddy or to your boss. They'll pay it 😎
 
-- Private: Your children can make purchases by themself but you still have the control over the payment.
-
-- Business: Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
+- [Family] Your children can make purchases by themself but you still have the control over the payment.
+- [Business] Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
 
 ## Digital receipt 🧾
 All your purchases are stored in the app digitally. No paper waste 🌱
@@ -86,6 +85,7 @@ There are several possibilty to make revenue.
 - monthly subscription for Family / Business account with extra features:
   - scheduled transfers
   - recurring transfers
+  - overview of all the connected accounts
 - additional services offered based on the purchased products
   - marketplease for (travel) insurances
   - digital loyalty programs for brands (cross-store purchases)
