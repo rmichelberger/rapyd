@@ -83,7 +83,7 @@ Based on the items you've purchased, the app suggests to you additional services
 There are several possibilty to make revenue.
 - by wallet top-up a fee for instant payment done with card
 - possible small fee for send / receive money transactions
-- monthly subscription for Family / Business account
+- monthly subscription for Family / Business account with extra features:
   - scheduled transfers
   - recurring transfers
 - additional services offered based on the purchased products
