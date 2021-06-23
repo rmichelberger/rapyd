@@ -118,7 +118,7 @@ Following Rapyd APIs are integrated:
 A lightweigth middleware was developed with TypeScript and node js, deployed to firebase. It's used only to not to expose the Rapyd Credentials (secret key). Most probably I could've used the Mobile SDK directly without the backend, but at the time I've started with the project, there was no Rapyd Mobile SDK compatible with latest Xcode version.
 
 ## Demo shop 🏬
-An demo implementation of online purchase was developed with a simple shop.
+A demo implementation of online purchase was developed with a simple shop.
 It can be also used as a virtual terminal for creating in-store payments.
 
 [Webpage](https://rapyd-pay.web.app)
