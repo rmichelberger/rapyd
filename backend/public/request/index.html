@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request Money</title>
+    <link id="favicon" href="https://files.readme.io/18a1355-small-favicon-32x32.png" rel="shortcut icon"
+        type="image/png">
+
+    <meta property="og:title" content="Request Money">
+    <meta property="og:description" content="Pay online or in-store. Easy. Fun. Secure. Rapyd.">
+    <meta property="og:image" content="https://dashboard.rapyd.net/images/rapyd-logo-black.svg">
+    <meta property="og:url" content="https://rapyd-pay.web.app">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <style media="screen">
+        body {
+            background: #ECEFF1;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            background: white;
+            max-width: 360px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+            border-top: 16px solid #2f66f2;
+        }
+
+        #message h2 {
+            color: #2f66f2;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
+
+        #message p {
+            /* line-height: 140%; */
+            /* margin: 16px 0 24px; */
+            margin-top: 40px;
+            margin-block-end: 10px;
+            font-size: 14px;
+        }
+
+        #message {
+            /* display: block; */
+            text-align: center;
+        }
+
+        #message {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        #footer {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #message a {
+            /* line-height: 140%; */
+            padding: 10px;
+            /* font-size: 14px; */
+            background: #2f66f2;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        @media (max-width: 600px) {
+
+            body,
+            #message {
+                margin-top: 0;
+                background: white;
+                box-shadow: none;
+                border-top: 0px;
+            }
+
+            body {
+                border-top: 16px solid #2f66f2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message">
+        <img src="https://dashboard.rapyd.net/images/rapyd-logo-black.svg" />
+        <h1>Request money</h1>
+        <h2>Open Rapyd Pay app to finish process</h2>
+        <br></br>
+        <a id="link">Open app</a>
+    </div>
+    <p id="footer">©2021 Rapyd Financial Network (2016) Ltd.</p>
+
+    <script>
+        const link = document.querySelector('#link');
+        link.href = window.location.href
+
+    </script>
+</body>
+
+</html>

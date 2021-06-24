@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapyd Checkout</title>
+  <link id="favicon" href="https://files.readme.io/18a1355-small-favicon-32x32.png" rel="shortcut icon"
+    type="image/png">
+
+  <meta property="og:title" content="Rapyd Checkout">
+  <meta property="og:description" content="Pay online or in-store. Easy. Fun. Secure. Rapyd.">
+  <meta property="og:image" content="https://dashboard.rapyd.net/images/rapyd-logo-black.svg">
+  <meta property="og:url" content="https://rapyd-pay.web.app">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-app.js"></script> -->
+
+
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-auth.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-database.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-firestore.js"></script> -->
+
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-functions.js"></script> -->
+
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-messaging.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-storage.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-analytics.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-remote-config.js"></script> -->
+  <!-- <script defer src="/__/firebase/8.6.3/firebase-performance.js"></script> -->
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+
+
+  <!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+
+  <script src="../qrcode.min.js" defer></script>
+
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 520px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+      border-top: 16px solid #2f66f2;
+    }
+
+    #message h2 {
+      /* color: #2f66f2; */
+      /* font-weight: bold; */
+      font-size: 26px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 10px 0 16px;
+    }
+
+    #message p {
+      /* line-height: 140%; */
+      /* margin: 16px 0 24px; */
+      margin-top: 40px;
+      margin-block-end: 10px;
+      font-size: 14px;
+    }
+
+    #message {
+      /* display: block; */
+      text-align: center;
+    }
+
+    #message {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #message button {
+      background-color: #2f66f2;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+
+    }
+
+    #logo {
+      max-height: 50px;
+    }
+
+
+    #qrcode img {
+      margin: auto;
+    }
+
+    #footer {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+        border-top: 0px;
+      }
+
+      body {
+        border-top: 16px solid #2f66f2;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="message">
+    <img id="logo" />
+    <h1>Total amount to pay</h1>
+    <h2 id="price">...</h2>
+    <h3>Scan QR code with Rapyd Pay app to complete payment.</h3>
+    <div id="qrcode"></div>
+
+    <div id="share-div">
+      <p>Do you want to forward this payment?</p>
+      <button id="share-button">Forward Payment</button>
+    </div>
+    <h6>Please do not close this page until payment has been processed.</h6>
+    <p>Install the "Rapyd Pay" app</p>
+    <a target="_blank" href="https://apps.apple.com"><img src="../mobile-app-icon-apple.png" /></a>
+  </div>
+  <p id="footer">©2021 Rapyd Financial Network (2016) Ltd.</p>
+
+  <script>
+    const btn = document.querySelector('#share-button');
+    btn.addEventListener('click', async () => {
+      const shareData = {
+        title: 'Rapyd Pay',
+        text: 'Could you please pay this for me? Thanks 🙃',
+        url: window.location.href,
+      }
+
+      try {
+        await navigator.share(shareData)
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
+    if (navigator.share) {
+      document.querySelector('#share-div').style.display = "block";
+    } else {
+      document.querySelector('#share-div').style.display = "none";
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const priceElement = document.querySelector('#price');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      // try {
+      //   let app = firebase.app();
+      //   let features = [
+      //     'auth',
+      //     'database',
+      //     'firestore',
+      //     'functions',
+      //     'messaging',
+      //     'storage',
+      //     'analytics',
+      //     'remoteConfig',
+      //     'performance',
+      //   ].filter(feature => typeof app[feature] === 'function');
+      //   loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      // } catch (e) {
+      //   console.error(e);
+      //   loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      // }
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const checkoutId = urlParams.get('id')
+
+      var success_url;
+      var error_url;
+
+      function getCheckout(checkoutId) {
+
+        fetch("https://us-central1-rapyd-pay.cloudfunctions.net/api/checkouts?id=" + checkoutId, {
+          method: "GET",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          }
+        })
+          .then(response => response.json())
+          .then(res => {
+            console.log("getCheckout complete! response:", res.cart_items);
+
+            if (res.amount) {
+              if (res.currency) {
+                priceElement.textContent = `${res.amount} ${res.currency}`
+              }
+            }
+
+            if (res.merchant_logo) {
+              const logo = document.querySelector('#logo');
+              logo.src = res.merchant_logo;
+            }
+
+            if (res.complete_checkout_url) {
+              success_url = res.complete_checkout_url;
+            }
+
+            if (res.cancel_checkout_url) {
+              error_url = res.cancel_checkout_url;
+            }
+
+            // get payment id
+            if (res.payment.description) {
+              // checkPayment(res.payment.description)
+            }
+          });
+      }
+
+      var counter = 0;
+
+      function checkPayment(paymentId) {
+
+        counter++;
+
+        fetch("https://us-central1-rapyd-pay.cloudfunctions.net/api/payments?id=" + paymentId, {
+          method: "GET",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          }
+        })
+          .then(response => response.json())
+          .then(res => {
+            console.log("checkPayment complete! response:", res);
+
+            if (res.original_amount) {
+              if (res.currency_code) {
+                priceElement.textContent = `${res.original_amount} ${res.currency_code}`
+              }
+            }
+
+            if (res.paid == true) {
+              if (success_url) {
+                window.location.href = success_url;
+              } else {
+                window.history.back();
+              }
+            } else if (counter < 120) {
+              setTimeout(function () { checkPayment(paymentId); }, 1000);
+            } else if (error_url) {
+              window.location.href = error_url;
+            } else {
+              window.history.back();
+            }
+
+          });
+      }
+
+      if (checkoutId) {
+        getCheckout(checkoutId);
+        try {
+
+          const qr = new QRCode("qrcode", {
+            width: 220,
+            height: 220,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+          });
+
+          qr.makeCode(window.location.href);
+
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+
+    });
+  </script>
+</body>
+
+</html>
+
+<!-- http://localhost:5000/?paymentId=payment_2bf7e004be49a693f3a7eb8105ad1de7 -->
+<!-- http://localhost:5000/?checkoutId=checkout_85307fef390111e241bf4c1bc57cdaf6 -->
+<!-- http://localhost:5000/?checkoutId=checkout_672b4d65cd6ee6245996869acf563819 -->
+
+<!-- payment_b1f3b6f9c58de56a6bd5888422c8b10c -->
+
+<!-- http://localhost:5000/?checkoutId=checkout_3607f81f0bcaf7c73995d7bf5edcf283 -->

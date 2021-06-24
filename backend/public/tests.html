@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rapyd Tests</title>
+    <link id="favicon" href="https://files.readme.io/18a1355-small-favicon-32x32.png" rel="shortcut icon"
+        type="image/png">
+
+
+    <script src="./rapyd.js" defer></script>
+
+    <style media="screen">
+        body {
+            background: #ECEFF1;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            background: white;
+            max-width: 360px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+            border-top: 16px solid #2f66f2;
+        }
+
+        #message h2 {
+            color: #2f66f2;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
+
+        #message p {
+            /* line-height: 140%; */
+            /* margin: 16px 0 24px; */
+            margin-top: 40px;
+            margin-block-end: 10px;
+            font-size: 14px;
+        }
+
+        #message button {
+            background-color: #2f66f2;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+        }
+
+
+        #message {
+            /* display: block; */
+            text-align: center;
+        }
+
+        #message {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        #footer {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+
+
+        @media (max-width: 600px) {
+
+            body,
+            #message {
+                margin-top: 0;
+                background: white;
+                box-shadow: none;
+                border-top: 0px;
+            }
+
+            body {
+                border-top: 16px solid #2f66f2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message">
+        <img src="https://dashboard.rapyd.net/images/rapyd-logo-black.svg" />
+        <h1>Test purchases</h1>
+
+        <button
+            onclick="checkout('ewallet_248843b6792f84bf9d1d68d3c8a3bdda', 'expedia', 186.8, 'https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2', [ {'name': 'Flight ticket Economy Class: SEA - SFO','amount': 186.8,'quantity': 1, 'image': 'https://logosmarken.com/wp-content/uploads/2021/02/Expedia-Logo-650x366.png'}])">Flight
+            ticket</button>
+        <button
+            onclick="checkout('ewallet_974761602b104bc0956f63980528ccb7', 'Apple', 1498.0, 'https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-1024x640.png', [ {'name': '12.9-inch iPad Pro','amount': 1099.0,'quantity': 1, 'image': 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617126613000'},{'name': 'Apple Watch Space Gray Aluminum Case with Sport Loop','amount': 399.0,'quantity': 1, 'image': 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MJFT3_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1617228545000,1599523448000'}])">Apple
+            devices</button>
+
+    </div>
+    <p id="footer">©2021 Rapyd Financial Network (2016) Ltd.</p>
+
+    <script>
+
+        function checkout(walledId, mechantReferenceId, amount, logo, products) {
+            const rapydPay = new RapydPay();
+            rapydPay.createCheckout(walledId, mechantReferenceId, amount, "USD", "https://rapyd-pay.web.app/thanks.html", "https://rapyd-pay.web.app/failed.html", logo, products);
+        }
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', submit);
+
+    </script>
+</body>
+
+</html>

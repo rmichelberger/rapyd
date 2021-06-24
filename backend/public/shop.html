@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rapyd Shop</title>
+    <link id="favicon" href="https://files.readme.io/18a1355-small-favicon-32x32.png" rel="shortcut icon"
+        type="image/png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script src="./rapyd.js" defer></script>
+
+    <style media="screen">
+        body {
+            background: #ECEFF1;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            background: white;
+            max-width: 360px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+            border-top: 16px solid #2f66f2;
+        }
+
+        #message h2 {
+            color: #2f66f2;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
+
+        #message p {
+            /* line-height: 140%; */
+            /* margin: 16px 0 24px; */
+            margin-top: 40px;
+            margin-block-end: 10px;
+            font-size: 14px;
+        }
+
+        #message button {
+            background-color: #2f66f2;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+        }
+
+
+        #message {
+            /* display: block; */
+            text-align: center;
+        }
+
+        #message {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        #footer {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+
+
+        @media (max-width: 600px) {
+
+            body,
+            #message {
+                margin-top: 0;
+                background: white;
+                box-shadow: none;
+                border-top: 0px;
+            }
+
+            body {
+                border-top: 16px solid #2f66f2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message">
+        <img src="https://dashboard.rapyd.net/images/rapyd-logo-black.svg" />
+        <h1>Example shop</h1>
+        <form id="form">
+            <label for="amount">Amount (USD):</label>
+            <input inputmode="decimal" type="number" id="amount" name="amount" placeholder="1.0" step="0.01"
+                min="0"><br><br>
+            <button type="submit">Create payment</button>
+        </form>
+    </div>
+    <p id="footer">©2021 Rapyd Financial Network (2016) Ltd.</p>
+
+    <script>
+
+        function submit(event) {
+            event.preventDefault();
+
+            var amount = document.forms["form"]["amount"].value;
+            if (isNaN(amount)) {
+                alert("Amount must be a number.");
+                return;
+            }
+
+            if (amount <= 0) {
+                alert("Amount must be greater than 0.");
+                return;
+            }
+
+            const rapydPay = new RapydPay();
+            rapydPay.createCheckout("ewallet_1a327eb100f2388ceedec16b9c4d292d", "rapyd_example_shop", parseFloat(amount), "USD", "https://rapyd-pay.web.app/thanks.html", "https://rapyd-pay.web.app/failed.html", "https://dashboard.rapyd.net/images/rapyd-logo-black.svg", []);
+
+        }
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', submit);
+
+    </script>
+</body>
+
+</html>
