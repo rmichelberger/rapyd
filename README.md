@@ -76,7 +76,7 @@ Is your electronic product broken you've bought 8 months ago? No worries. You ca
 Based on the items you've purchased, the app suggests to you additional services:
 - Travel insurance
 - Extended warranty
-- Cross-merchant marketing campaign based on the product information: e.g. the customer buys Coca Cola product in the supermarket, in the bar and later in the restaurant - the app can detect all the Coca Cola products purchased in different stores and can offer e.g. a coupon for a free Cola after every 5 purchases made
+- Cross-merchant marketing campaign based on the product information: e.g. the customer buys Coca Cola product in the supermarket, in the bar and later in the restaurant - the app can detect all the Coca Cola products purchased in different stores/locations and can offer e.g. a coupon for a free Cola after every 5 purchases made
 
 # Business Model 🤑
 
