@@ -114,9 +114,13 @@ Following Rapyd APIs are integrated:
 - Testing
   - [Add Funds to Wallet Account](https://docs.rapyd.net/build-with-rapyd/reference/add-funds-and-remove-funds-transactions#add-funds-to-wallet-account)
 
+[Source code](/ios)
 
 ## Backend 💻
 A lightweigth middleware was developed with TypeScript and node js, deployed to firebase. It's used only to not to expose the Rapyd Credentials (secret key). Most probably I could've used the Mobile SDK directly without the backend, but at the time I've started with the project, there was no Rapyd Mobile SDK compatible with latest Xcode version.
+
+[Source code](/backend)
+
 
 ## Demo shop 🏬
 A demo implementation of online purchase was developed with a simple shop.
