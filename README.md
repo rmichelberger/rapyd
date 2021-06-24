@@ -41,10 +41,10 @@ Create your account on your mobile. Everything online, super fast. Just upload a
 You can top up your wallet with either a bank transfer or a card payment. Quick and secure.
 
 ## Send / receive money 💬
-You can send/receive money to your friends & family as easy as sending a chat message.
+You can send / receive money to your friends & family as easy as sending a chat message.
 
-- [Family] Do you want to give pocket money to your children? No problem.
-- [Business] Payout your employees with Rapyd? No problem.
+- `Family` Do you want to give pocket money to your children? No problem.
+- `Business` Payout your employees with Rapyd? No problem.
 - Just create a recurring payment and let the magic happen.__*__
 ##### (*Feature is under development)
 
@@ -64,13 +64,13 @@ Merchants can easily create a payment. No need to have any expensive card termin
 ## Forward payment ➡️
 You can forward the payment with just one click. Send it to your daddy or to your boss. They'll pay it 😎
 
-- [Family] Your children can make purchases by themself but you still have the control over the payment.
-- [Business] Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
+- `Family` Your children can make purchases by themself but you still have the control over the payment.
+- `Business` Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
 
 ## Digital receipt 🧾
 All your purchases are stored in the app digitally. No paper waste 🌱
 
-Is your electronic product broken you've bought 8 months ago? No worries. You can always find the receipt later if you need it for warranty.
+Is your headphone broken what you've bought 8 months ago? No worries. You can always find the receipt if you need it later for warranty.
 
 ## Insights 💡
 Based on the items you've purchased, the app suggests to you additional services:
