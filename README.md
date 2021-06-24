@@ -24,6 +24,7 @@ __Table of Contents__
   * [App 📱](#app-)
   * [Backend 💻](#backend-)
   * [Demo shop 🏬](#demo-shop-)
+- [Screenshots 🖼](#screenshots-)
 - [ToDos 📝](#todos-)
 
 # Demo Video
@@ -130,6 +131,41 @@ It can be also used as a virtual terminal for creating in-store payments.
 [Balance of example shop](https://rapyd-pay.web.app/balance.html)
 
 [Example checkout](https://rapyd-pay.web.app/checkout/checkout.html?id=checkout_1d2addfc08cd2a0a34d2d557013e2aa1)
+
+# Screenshots 🖼
+
+### Dashboard
+
+<kbd><img src="/screenshots/1.png" alt="drawing" width="200"/></kbd>
+
+### Add money to wallet
+
+<kbd><img src="/screenshots/2.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/3.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/4.png" alt="drawing" width="200"/></kbd>
+
+### Create Send money link
+
+<kbd><img src="/screenshots/5.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/6.png" alt="drawing" width="200"/></kbd>
+
+### Collect received money
+
+<kbd><img src="/screenshots/16.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/17.png" alt="drawing" width="200"/></kbd>
+
+### Create Request money link
+
+<kbd><img src="/screenshots/7.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/8.png" alt="drawing" width="200"/></kbd>
+
+### Send requested money
+
+<kbd><img src="/screenshots/18.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/19.png" alt="drawing" width="200"/></kbd>
+
+### Transactions
+
+<kbd><img src="/screenshots/9.png" alt="drawing" width="200"/></kbd>
+
+### Receipts + Insights (travel insurace, extended warranty)
+
+<kbd><img src="/screenshots/10.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/11.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/12.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/13.png" alt="drawing" width="200"/></kbd>
+
 
 # ToDos 📝
 - implement onboarding verification
