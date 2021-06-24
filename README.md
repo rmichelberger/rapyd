@@ -162,9 +162,17 @@ It can be also used as a virtual terminal for creating in-store payments.
 
 <kbd><img src="/screenshots/9.png" alt="drawing" width="200"/></kbd>
 
-### Receipts + Insights (travel insurace, extended warranty)
+### Receipts + Instights
 
-<kbd><img src="/screenshots/10.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/11.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/12.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/13.png" alt="drawing" width="200"/></kbd>
+<kbd><img src="/screenshots/10.png" alt="drawing" width="200"/></kbd>
+
+###### Extended warranty
+
+<kbd><img src="/screenshots/11.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/12.png" alt="drawing" width="200"/></kbd>
+
+###### Travel insurace
+
+<kbd><img src="/screenshots/20.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/13.png" alt="drawing" width="200"/></kbd>
 
 
 # ToDos 📝
