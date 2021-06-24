@@ -81,14 +81,14 @@ Based on the items you've purchased, the app suggests to you additional services
 # Business Model 🤑
 
 There are several possibilty to make revenue.
-- by wallet top-up a fee for instant payment done with card
+- wallet top-up: small fee for instant payment done with card
 - possible small fee for send / receive money transactions
-- monthly subscription for Family / Business account with extra features:
+- monthly subscription for `Family` / `Business` account with extra features:
   - scheduled transfers
   - recurring transfers
   - overview of all the connected accounts
 - additional services offered based on the purchased products
-  - marketplease for (travel) insurances
+  - marketplace for (travel) insurances
   - digital loyalty programs for brands (cross-store purchases)
   - analytics based on purchase informations
 
