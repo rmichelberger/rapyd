@@ -2,7 +2,7 @@
 
 `Formula 0001: Rapyd Fintech Grand Prix`
 
-__A simple e-wallet app with multiple currency.__
+__A simple to use e-wallet app with multiple currency.__
 
 _Fun.Easy.Secure.Rapyd._
 
@@ -41,10 +41,10 @@ Create your account on your mobile. Everything online, super fast. Just upload a
 You can top up your wallet with either a bank transfer or a card payment. Quick and secure.
 
 ## Send / receive money 💬
-You can send/receive money to your friends & family as easy as sending a chat message.
+You can send / receive money to your friends & family as easy as sending a chat message.
 
-- [Family] Do you want to give pocket money to your children? No problem.
-- [Business] Payout your employees with Rapyd? No problem.
+- `Family` Do you want to give pocket money to your children? No problem.
+- `Business` Payout your employees with Rapyd? No problem.
 - Just create a recurring payment and let the magic happen.__*__
 ##### (*Feature is under development)
 
@@ -64,31 +64,31 @@ Merchants can easily create a payment. No need to have any expensive card termin
 ## Forward payment ➡️
 You can forward the payment with just one click. Send it to your daddy or to your boss. They'll pay it 😎
 
-- [Family] Your children can make purchases by themself but you still have the control over the payment.
-- [Business] Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
+- `Family` Your children can make purchases by themself but you still have the control over the payment.
+- `Business` Don't want to give your company credit card details to all your employees? Don't have the time to make all the orders? No problem. Let them make the order but forward the payment directly to you. You've the full overview and control over all the payments.
 
 ## Digital receipt 🧾
 All your purchases are stored in the app digitally. No paper waste 🌱
 
-Is your electronic product broken you've bought 8 months ago? No worries. You can always find the receipt later if you need it for warranty.
+Is your headphone broken what you've bought 8 months ago? No worries. You can always find the receipt if you need it later for warranty.
 
 ## Insights 💡
 Based on the items you've purchased, the app suggests to you additional services:
 - Travel insurance
 - Extended warranty
-- Cross-merchant marketing campaign based on the product information: e.g. the customer buys Coca Cola product in the supermarket, in the bar and later in the restaurant - the app can detect all the Coca Cola products purchased in different stores and can offer e.g. a coupon for a free Cola after every 5 purchases made
+- Cross-merchant marketing campaign based on the product information: e.g. the customer buys Coca Cola product in the supermarket, in the bar and later in the restaurant - the app can detect all the Coca Cola products purchased in different stores/locations and can offer e.g. a coupon for a free Cola after every 5 purchases made
 
 # Business Model 🤑
 
 There are several possibilty to make revenue.
-- by wallet top-up a fee for instant payment done with card
+- wallet top-up: small fee for instant payment done with card
 - possible small fee for send / receive money transactions
-- monthly subscription for Family / Business account with extra features:
+- monthly subscription for `Family` / `Business` account with extra features:
   - scheduled transfers
   - recurring transfers
   - overview of all the connected accounts
 - additional services offered based on the purchased products
-  - marketplease for (travel) insurances
+  - marketplace for (travel) insurances
   - digital loyalty programs for brands (cross-store purchases)
   - analytics based on purchase informations
 
@@ -162,9 +162,17 @@ It can be also used as a virtual terminal for creating in-store payments.
 
 <kbd><img src="/screenshots/9.png" alt="drawing" width="200"/></kbd>
 
-### Receipts + Insights (travel insurace, extended warranty)
+### Receipts + Instights
 
-<kbd><img src="/screenshots/10.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/11.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/12.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/13.png" alt="drawing" width="200"/></kbd>
+<kbd><img src="/screenshots/10.png" alt="drawing" width="200"/></kbd>
+
+###### Extended warranty
+
+<kbd><img src="/screenshots/11.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/12.png" alt="drawing" width="200"/></kbd>
+
+###### Travel insurace
+
+<kbd><img src="/screenshots/20.png" alt="drawing" width="200"/></kbd><kbd><img src="/screenshots/13.png" alt="drawing" width="200"/></kbd>
 
 
 # ToDos 📝
