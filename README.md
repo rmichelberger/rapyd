@@ -2,7 +2,7 @@
 
 `Formula 0001: Rapyd Fintech Grand Prix`
 
-__A simple e-wallet app with multiple currency.__
+__A simple to use e-wallet app with multiple currency.__
 
 _Fun.Easy.Secure.Rapyd._
 
