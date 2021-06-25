@@ -73,7 +73,7 @@ All your purchases are stored in the app digitally. No paper waste 🌱
 Is your headphone broken what you've bought 8 months ago? No worries. You can always find the receipt if you need it later for warranty.
 
 ## Insights 💡
-Based on the items you've purchased, the app suggests to you additional services:
+Based on the items you've purchased, the app suggests additional services to you:
 - Travel insurance
 - Extended warranty
 - Cross-merchant marketing campaign based on the product information: e.g. the customer buys Coca Cola product in the supermarket, in the bar and later in the restaurant - the app can detect all the Coca Cola products purchased in different stores/locations and can offer e.g. a coupon for a free Cola after every 5 purchases made
