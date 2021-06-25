@@ -1,6 +1,6 @@
 # Rapyd Pay ⚡️
 
-`Formula 0001: Rapyd Fintech Grand Prix`
+🏎 `Formula 0001: Rapyd Fintech Grand Prix` 🏆
 
 __A simple to use e-wallet app with multiple currency.__
 
