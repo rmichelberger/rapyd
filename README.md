@@ -183,6 +183,6 @@ It can be also used as a virtual terminal for creating in-store payments.
 - implement onboarding verification
 - add a new `payment_method` for the Rapyd Pay e-wallet payment. Currently `us_multiplestoresother_cash` is used, but it supports only `USD` currency.
 - instead of using a custom created checkout page, integrate Rapyd Pay payment method to the existing Rapyd checkout page
-- use machine learning to provide insights based on the receipt product items (e.g. travel insurance, extendedd warranty, ..)
+- use machine learning to provide insights based on the receipt product items (e.g. travel insurance, extended warranty, ..)
 - I've created only one account, so in the sandbox mode there is always this `merchant_id` used instead of creating multiple merchant accounts as it would be in the real world
 - implement recurring payment sending
