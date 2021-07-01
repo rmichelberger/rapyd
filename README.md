@@ -128,7 +128,7 @@ It can be also used as a virtual terminal for creating in-store payments.
 
 [Webpage](https://rapyd-pay.web.app)
 
-[Shop](https://rapyd-pay.web.app/shop.html)
+[Virtual terminal](https://rapyd-pay.web.app/terminal.html)
 
 [Test payments](https://rapyd-pay.web.app/tests.html)
 
